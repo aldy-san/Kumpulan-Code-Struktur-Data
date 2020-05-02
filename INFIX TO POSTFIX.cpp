@@ -82,14 +82,14 @@ int post_evaluator(string postfix){
 			if (op.size() != 1){
 				//operand pertama
 				int x = op.top();
-				cout << x << '#';
+				//cout << x << '#';
 				op.pop();
 				//operang kedua
 				int y = op.top();
-				cout << y << endl;
+				//cout << y << endl;
 				op.pop();
 				tot = operasi(x, y, postfix[i]);
-				cout << tot << "**\n";
+				//cout << tot << "**\n";
 				op.push(tot);
 			} 
 		} else {
